@@ -20,3 +20,21 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 ```
 
+## User stories
+```
+As a user,
+So that i have a place to keep my money safe,
+I'd like to open an account. 
+
+As a user, 
+I'd like to put deposit in my account.
+
+As a user, 
+so i can use my money,
+I'd like to withdraw money.
+
+As a user,
+So I can see the useage of my account,
+I'd like to be able to see a print out of statemnet - date, amount, balance.
+```
+
