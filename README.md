@@ -23,7 +23,7 @@ date || credit || debit || balance
 ## User stories
 ```
 As a user,
-So that i have a place to keep my money safe,
+So that I have a place to keep my money safe,
 I'd like to open an account. 
 
 As a user, 
@@ -37,4 +37,26 @@ As a user,
 So I can see the useage of my account,
 I'd like to be able to see a print out of statemnet - date, amount, balance.
 ```
+
+## Domain Model
+
+
+|Noun         | Owner or property |
+| --------   | ------------------| 
+| Account | Owner | 
+| Statement | Owner |
+
+|Action        | Owned by ? |
+| --------   | ------------------| 
+| Open  | Account  |
+| Deposit | Account |
+| Withdraw | Account |
+| Print | statement |
+
+|Action        | Property it reads or changes (in methods) |
+| --------   | ------------------|
+| Open | amount, balance |
+| Deposit | amount, statement |
+| Withdraw | amount, statement |
+| Print | statement = date, balance, withdraw, deposit - amount |
 
