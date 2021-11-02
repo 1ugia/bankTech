@@ -10,3 +10,10 @@ test('Puts deposits in', ()=> {
   account.deposit(50)
   expect(account.balance).toBe(50)
 });
+
+test('it withdraws', ()=> {
+  let account = new Account
+  account.deposit(50)
+  account.withdraw(20)
+  expect(account.balance).toBe(30)
+});
