@@ -6,7 +6,9 @@ class Account {
   deposit(amount) {
     if(isNaN(amount)) {
       throw 'Expected Money';
-    }
+    } else if(amount < 0) {
+      throw 'Negative amount'
+    };
     return this.interactions.push(amount);
   }
 
@@ -14,6 +16,8 @@ class Account {
     if(amount > this.balance()) {throw 'No money'
   } else if(isNaN(amount)) {
     throw 'Expected Money'
+  } else if(amount < 0) {
+    throw 'Negative amount'
   };
     return this.interactions.push(-amount);
   }

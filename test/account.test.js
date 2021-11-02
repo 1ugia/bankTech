@@ -52,3 +52,17 @@ test('withdraws floats', () =>{
   account.withdraw(1.50)
   expect(account.balance()).toBe(28.50)
 });
+
+test('cannot deposit minus amounts', () => {
+  let account = new Account
+  expect(() => {
+    account.deposit(-30)
+  }).toThrow('Negative amount')
+});
+
+test('cannot withdraw minus amount', () => {
+  let account = new Account
+  expect(() => {
+    account.withdraw(-30)
+  }).toThrow('Negative amount')
+});
