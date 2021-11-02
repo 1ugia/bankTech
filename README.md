@@ -60,3 +60,8 @@ I'd like to be able to see a print out of statemnet - date, amount, balance.
 | Withdraw | amount, statement |
 | Print | statement = date, balance, withdraw, deposit - amount |
 
+### Runnig Jest
+How to install:
+```yarn add --dev jest```
+How to run tests:
+```yarn test``` or ```yarn watch``` for continuous testing on your terminal.
