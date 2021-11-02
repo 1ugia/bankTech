@@ -42,11 +42,14 @@ I'd like to be notified when I try to take out more than my balance.
 As a user, 
 so I am inputting correct data, 
 I'd like to make sure that I can only insert Integers and floats only. 
+
+As a user, 
+I want to not be able to input negative amounts of money.
 ---
 
 As a user,
-So I can see the useage of my account,
-I'd like to be able to see a print out of statemnet - date, amount, balance.
+So I can see the use of my account,
+I'd like to be able to see a print out of statement - date, amount, balance.
 ```
 
 ## Domain Model
