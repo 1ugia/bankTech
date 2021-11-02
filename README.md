@@ -74,7 +74,7 @@ I'd like to be able to see a print out of statement - date, amount, balance.
 | Withdraw | amount, statement |
 | Print | statement = date, balance, withdraw, deposit - amount |
 
-### Runnig Jest
+### Running Jest
 How to install:
 ```yarn add --dev jest```
 How to run tests:
