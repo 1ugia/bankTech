@@ -4,11 +4,17 @@ class Account {
     this.interactions = [];
   }
   deposit(amount) {
+    if(isNaN(amount)) {
+      throw 'Expected Money';
+    }
     return this.interactions.push(amount);
   }
 
   withdraw(amount) {
-    if(amount > this.balance()) throw 'No money';
+    if(amount > this.balance()) {throw 'No money'
+  } else if(isNaN(amount)) {
+    throw 'Expected Money'
+  };
     return this.interactions.push(-amount);
   }
 
