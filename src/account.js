@@ -8,10 +8,11 @@ class Account {
   }
 
   withdraw(amount) {
-    return this.interactions.push(-amount)
+    if(amount > this.balance()) throw 'No money';
+    return this.interactions.push(-amount);
   }
 
-  balance() {
+  balance(/*function*/) { //logic
     return this.interactions.reduce((a, b) => a + b, 0)
   }
 };

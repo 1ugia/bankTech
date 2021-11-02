@@ -17,3 +17,11 @@ test('it withdraws', ()=> {
   account.withdraw(20)
   expect(account.balance()).toBe(30)
 });
+
+test('stops you from withdrawing more than balance', () => {
+  let account = new Account
+  account.deposit(50)
+  expect(() => {
+    account.withdraw(60)
+  }).toThrow('No money')
+});
