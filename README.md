@@ -33,6 +33,17 @@ As a user,
 so i can use my money,
 I'd like to withdraw money.
 
+---
+edge  cases:
+As a user, 
+so that I do not take out more than I have, 
+I'd like to be notified when I try to take out more than my balance. 
+
+As a user, 
+so I am inputting correct data, 
+I'd like to make sure that I can only insert Integers and floats only. 
+---
+
 As a user,
 So I can see the useage of my account,
 I'd like to be able to see a print out of statemnet - date, amount, balance.
