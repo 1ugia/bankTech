@@ -1,4 +1,4 @@
-class Account {
+class Account { // controller
   constructor(openingBalance = 0) {
     this.openingBalance = openingBalance;
     this.interactions = [];
@@ -15,7 +15,7 @@ class Account {
 
   balance(/*function*/) { //logic
     return this.interactions.reduce((a, b) => a + b, 0)
-  }
+  };
 
   _depositError(amount) {
     if(isNaN(amount)) {
